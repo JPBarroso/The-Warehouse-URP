@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UIStrings_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 5fe2042c75076dc478c7ccf1a2409090, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 5776963864985600030
+  m_TableData:
+  - m_Id: 73036292096
+    m_Localized: 'Pilas: {power}%'
+    m_Metadata:
+      m_Items:
+      - rid: 5776963864985600030
+  references:
+    version: 2
+    RefIds:
+    - rid: 5776963864985600030
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00604d0111000000
