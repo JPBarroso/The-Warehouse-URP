@@ -24,10 +24,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 5776963864985600030
+  - m_Id: 366048785031168
+    m_Localized: "Coger {itemInt:choose(0|1|2|3|4|5|6):mu\xF1eco|mando|libro|comida|pelota|botella|c\xE1mara|objeto}"
+    m_Metadata:
+      m_Items:
+      - rid: 5776963864985600030
   references:
     version: 2
     RefIds:
     - rid: 5776963864985600030
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00604d0111000000
+        m_Entries: 00604d01110000000060cd5feb4c0100

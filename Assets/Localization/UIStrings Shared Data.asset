@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: Batteries
     m_Metadata:
       m_Items: []
+  - m_Id: 366048785031168
+    m_Key: Grab items
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

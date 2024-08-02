@@ -13,10 +13,11 @@ public class ItemGrabber : MonoBehaviour
     [SerializeField] GameObject grabSlot;
     Object obj;
     GameObject grabbed;
+    [SerializeField] InfoTextMGR mgr;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
     private void Update()
     {
@@ -37,12 +38,15 @@ public class ItemGrabber : MonoBehaviour
         if(Physics.Raycast(cam.transform.position,cam.transform.forward, out hit, reach,mask) && isGrabbing == false)
         {
             obj = hit.transform.gameObject.GetComponent<Object>();
-            infoText.text = "Hitting " + obj.type;
+            mgr.GrabText(obj.type);
         }
         else
         {
             obj = null;
-            infoText.text = null;
+            if (infoText.enabled)
+            {
+                infoText.enabled = false;
+            }
         }
     }
     void Grab()

@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Scratched metal
+  m_Name: Scratched metal red
   m_Shader: {fileID: -6465566751694194690, guid: 6963d1448411b904f8efeab9fa5f5e59,
     type: 3}
   m_Parent: {fileID: 0}
@@ -148,7 +148,7 @@ Material:
     - _GlossyReflections: 0
     - _HeightmapScale: 1
     - _HeightmapTiling: 1.24
-    - _Metallic: 1
+    - _Metallic: 0.67
     - _Normal_Multiplier: 1.42
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -171,7 +171,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BaseColor_1: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor_1: {r: 1, g: 0.24708737, b: 0.13836467, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
