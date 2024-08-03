@@ -5,15 +5,14 @@ using UnityEngine;
 public class ConveyorScript : MonoBehaviour
 {
     Renderer rend;
-    public float speed;
+    public float speedX, speedY;
     public float movingForce;
-    float offset;
+    [SerializeField] Vector2 offset;
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<Renderer>();
-        Debug.Log(rend.material);
     }
 
     // Update is called once per frame
@@ -24,17 +23,16 @@ public class ConveyorScript : MonoBehaviour
     }
     void Scroller()
     {
-        offset = Time.time * speed;
-        rend.material.SetTextureOffset("_BaseColorMap", new Vector2(-offset, -offset));
-        rend.material.SetTextureOffset("_NormalMap", new Vector2(-offset, -offset));
-        rend.material.SetTextureOffset("_MetallicMap", new Vector2(-offset, -offset));
-        rend.material.SetTextureOffset("_AmbientOcclusionMap", new Vector2(-offset, -offset));
-        rend.material.SetTextureOffset("_RoughnessMap", new Vector2(-offset, -offset));
-        rend.material.SetTextureOffset("_HeightMap", new Vector2(-offset, -offset));
+        offset = new Vector2(Time.time * speedX,Time.time * speedY);
+        rend.material.SetTextureOffset("_BaseColorMap", offset);
+        rend.material.SetTextureOffset("_NormalMap", offset);
+        rend.material.SetTextureOffset("_MetallicMap", offset);
+        rend.material.SetTextureOffset("_AmbientOcclusionMap", offset);
+        rend.material.SetTextureOffset("_RoughnessMap", offset);
+        rend.material.SetTextureOffset("_HeightMap", offset);
     }
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
         rb = collision.gameObject.GetComponent<Rigidbody>();
         rb.velocity = new Vector3(movingForce,0,0);
     }
