@@ -3,3 +3,6 @@ Flashlight cookie: Vincent Taylor
 
 FONTS:
 Thryromanes - Herman Miller
+
+SOUNDS:
+Doomba SFX: Foley_Object_Fridge_Motor_Humming_Loop_Mono_NTG4.wav by Nox_Sound
